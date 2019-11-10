@@ -1,8 +1,8 @@
 {
-  "name": "react-native-contacts",
+  "name": "@applicaster/react-native-contacts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rt2zz/react-native-contacts.git"
+    "url": "https://github.com/applicaster-plugins/react-native-contacts.git"
   },
   "version": "4.0.2",
   "description": "React Native Contacts (android & ios)",
@@ -17,9 +17,9 @@
     "android"
   ],
   "bugs": {
-    "url": "https://github.com/rt2zz/react-native-contacts/issues"
+    "url": "https://github.com/applicaster-plugins/react-native-contacts/issues"
   },
-  "homepage": "https://github.com/rt2zz/react-native-contacts",
+  "homepage": "https://github.com/applicaster-plugins/react-native-contacts",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
