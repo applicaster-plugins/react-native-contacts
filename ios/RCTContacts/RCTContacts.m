@@ -675,6 +675,8 @@ RCT_EXPORT_METHOD(openContactForm:(NSDictionary *)contactData
             {
                 viewController = viewController.presentedViewController;
             }
+
+        [navigation setModalPresentationStyle:UIModalPresentationFullScreen];
         [viewController presentViewController:navigation animated:YES completion:nil];
 
         self->updateContactPromise = resolve;
@@ -806,6 +808,7 @@ RCT_EXPORT_METHOD(viewExistingContact:(NSDictionary *)contactData resolver:(RCTP
                 currentViewController = currentViewController.presentedViewController;
             }
 
+            [navigation setModalPresentationStyle:UIModalPresentationFullScreen];
             [currentViewController presentViewController:navigation animated:YES completion:nil];
 
             updateContactPromise = resolve;
@@ -897,6 +900,7 @@ RCT_EXPORT_METHOD(editExistingContact:(NSDictionary *)contactData resolver:(RCTP
                 {
                     viewController = viewController.presentedViewController;
                 }
+            [navigation setModalPresentationStyle:UIModalPresentationFullScreen];
             [viewController presentViewController:navigation animated:YES completion:nil];
             [controller presentViewController:alert animated:YES completion:nil];
 
