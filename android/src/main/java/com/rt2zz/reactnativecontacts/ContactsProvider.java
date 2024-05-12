@@ -1,6 +1,7 @@
 package com.rt2zz.reactnativecontacts;
 
 import android.content.ContentResolver;
+import android.content.res.Resources;
 import android.database.Cursor;
 import android.net.Uri;
 import android.provider.ContactsContract;
@@ -394,7 +395,7 @@ public class ContactsProvider {
                         int labelIndex = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.LABEL);
                         if (labelIndex >= 0) {
                             String typeLabel = cursor.getString(labelIndex);
-                            label = ContactsContract.CommonDataKinds.Phone..getTypeLabel(Resources.getSystem(), phoneType, typeLabel).toString();
+                            label = ContactsContract.CommonDataKinds.Phone.getTypeLabel(Resources.getSystem(), phoneType, typeLabel).toString();
                         } else {
                             label = "other";
                         }
